@@ -96,7 +96,7 @@ app.post(`/login`, (request, response) => {
 	return response.json({
 		success: true,
 		message: `Usuário logado com sucesso`,
-		data: {},
+		data: { email: dadosDoUsuario.email },
 	});
 });
 
