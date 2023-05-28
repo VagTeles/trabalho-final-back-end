@@ -13,7 +13,7 @@ app.use(
 
 app.listen(8080, () => console.log(`Server Online ✅✅`));
 
-app.get("/api", (request, response) => {
+app.get("/", (request, response) => {
 	return response.json(`Olá, seja bem vindo ao seu CRUD de recados.`);
 });
 //Criar e listar usuarios
