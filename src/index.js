@@ -22,7 +22,7 @@ const listaUsuario = [];
 app.get("/list-users", (request, response) => {
 	return response.json(listaUsuario);
 });
-app.post(`/user`, (request, response) => {
+app.post(`/users`, (request, response) => {
 	const dados = request.body;
 
 	const novoUsuario = {
